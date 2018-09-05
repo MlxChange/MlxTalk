@@ -21,7 +21,7 @@ import kotlin.reflect.jvm.jvmErasure
  */
 abstract class BaseFragment<out P:BasePresenter<BaseFragment<P>>>:IView<P>,Fragment(){
 
-    override val presenter: P
+    final override val presenter: P
 
     init {
         presenter=initPresenter()
