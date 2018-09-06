@@ -36,10 +36,17 @@ abstract class BaseFragment<out P:BasePresenter<BaseFragment<P>>>:IView<P>,Fragm
                 classType=classType.supertypes.firstOrNull()?.jvmErasure ?:break
             }
         }.flatMap{
+            //it.arguments返回的是类型参数
             it.flatMap{it.arguments}.asSequence()
         }.first{
+            /*
+            *KTypeProjection表示类型投影,例如，
+            * 在类型Array <out Number>中，out Number是由类Number表示的类型的协变投影。
+            * jvmErasur返回表示在JVM上将此类型擦除到的运行时类的KClass实例。
+            */
             it.type?.jvmErasure?.isSubclassOf(IPresenter::class) ?: false
         }.let{
+            //返回此类的主要构造函数，如果此类没有主构造函数，则返回null。
             return it.type!!.jvmErasure.primaryConstructor!!.call() as P
         }
     }
