@@ -1,4 +1,4 @@
-package mlx.codereader
+package com.mlx.codereader
 
 import mlx.com.common.ext.PreferenceExt
 

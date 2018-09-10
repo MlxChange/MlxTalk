@@ -4,6 +4,9 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'kotlin-noarg'
+apply plugin: 'kotlin-allopen'
+
 android {
     compileSdkVersion 27
     defaultConfig {
@@ -20,8 +23,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
+noArg {
+    annotation("com.mlx.codereader.annotation.NoArg")
+}
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"

@@ -1,4 +1,4 @@
-package mlx.codereader
+package com.mlx.codereader
 
 import android.app.Application
 import android.content.ContextWrapper
@@ -14,7 +14,7 @@ private lateinit var INSTANCE:Application
 class CodeReaderAPP:Application(){
     override fun onCreate() {
         super.onCreate()
-        INSTANCE=this
+        INSTANCE =this
     }
 
 }

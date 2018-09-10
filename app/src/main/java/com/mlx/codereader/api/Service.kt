@@ -1,4 +1,4 @@
-package mlx.codereader.api
+package com.mlx.codereader.api
 
 import android.content.Context
 import com.google.gson.GsonBuilder
@@ -31,7 +31,7 @@ class Service(ctx: Context, baseUrl: String, debugMode: Boolean=false) {
 
 
         fun init(ctx: Context, baseUrl: String, debugMode: Boolean=true) {
-            INSTANCE = Service(ctx, baseUrl,debugMode)
+            INSTANCE = Service(ctx, baseUrl, debugMode)
         }
 
 
