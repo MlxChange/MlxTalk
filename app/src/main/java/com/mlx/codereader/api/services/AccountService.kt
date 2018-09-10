@@ -22,6 +22,6 @@ interface AccountService{
     fun getAccount():Flowable<Account>
 
     @PATCH("user")
-    fun updateAccount(@Body account: Account)
+    fun updateAccount(@Body account: Account):Flowable<Account>
 
 }
