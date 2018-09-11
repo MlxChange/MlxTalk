@@ -14,7 +14,7 @@ class ApiHeaderInterceptor : Interceptor {
     @Throws(IOException::class)
     override fun intercept(chain: Interceptor.Chain): Response {
         val originalRequest = chain.request()
-        val encode= Base64.encode("mlxchange:7biezhideai".toByteArray(),Base64.DEFAULT)
+        val encode= Base64.encode("".toByteArray(),Base64.DEFAULT)
         val author= "Basic "+String(encode).trim()
         val request = originalRequest.newBuilder()
                 .addHeader("Authorization",author)
