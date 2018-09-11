@@ -1,8 +1,9 @@
 package com.mlx.codereader.model
 
 import com.google.gson.annotations.SerializedName
+import com.mlx.codereader.annotation.NoArg
 
-
+@NoArg
 data class Account(
         @SerializedName("login") var login: String?,
         @SerializedName("id") var id: Int?,
