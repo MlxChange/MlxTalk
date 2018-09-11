@@ -2,6 +2,8 @@ package com.mlx.codereader
 
 import android.app.Application
 import android.content.ContextWrapper
+import com.mlx.codereader.api.BASE_URL
+import com.mlx.codereader.api.Service
 
 /**
  * Project:codeReader
@@ -15,6 +17,7 @@ class CodeReaderAPP:Application(){
     override fun onCreate() {
         super.onCreate()
         INSTANCE =this
+        Service.init(this, BASE_URL)
     }
 
 }

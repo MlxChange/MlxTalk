@@ -43,6 +43,7 @@ class Service(ctx: Context, baseUrl: String, debugMode: Boolean=false) {
 
     init {
         val httpClient = OkHttpClient.Builder()
+        httpClient.addInterceptor(ApiHeaderInterceptor())
         httpClient.addInterceptor(HttpLoggingInterceptor(HttpLog()).setLevel(HttpLoggingInterceptor.Level.BODY))
         httpClient.cache(Cache(File(ctx.cacheDir,"service").apply { ensureDir() },8*1024*1024))
         val gson = GsonBuilder()
