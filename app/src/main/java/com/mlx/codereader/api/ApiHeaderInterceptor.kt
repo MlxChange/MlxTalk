@@ -14,12 +14,23 @@ class ApiHeaderInterceptor : Interceptor {
     @Throws(IOException::class)
     override fun intercept(chain: Interceptor.Chain): Response {
         val originalRequest = chain.request()
-        val encode= Base64.encode("".toByteArray(),Base64.DEFAULT)
-        val author= "Basic "+String(encode).trim()
-        val request = originalRequest.newBuilder()
-                .addHeader("Authorization",author)
-                .build()
-        return chain.proceed(request)
+        when{
+            originalRequest.url().encodedPathSegments().contains("authorizations")->{
+
+            }
+        }
+        return chain.proceed(originalRequest.newBuilder()
+                .apply {
+                    when{
+                        originalRequest.url().encodedPathSegments().contains("authorizations")->{
+                            val encode= Base64.encode("".toByteArray(),Base64.DEFAULT)
+                            val author= "Basic "+String(encode).trim()
+                            addHeader("Authorization",author)
+                        }
+
+                    }
+                }
+                .build())
     }
 
 

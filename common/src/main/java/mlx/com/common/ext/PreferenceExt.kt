@@ -10,7 +10,7 @@ import kotlin.reflect.KProperty
  */
 class PreferenceExt<T>(
         var context: Context,
-        val name: String,
+        val name: String="",
         val default: T,
         val preName: String = "default") : ReadWriteProperty<Any?, T> {
 
@@ -19,18 +19,19 @@ class PreferenceExt<T>(
     }
 
     override fun getValue(thisRef: Any?, property: KProperty<*>): T {
+        val preferencesName=selectName(property)
         return when (default) {
             is Boolean -> {
-                preferences.getBoolean(name, default)
+                preferences.getBoolean(preferencesName, default)
             }
             is Long -> {
-                preferences.getLong(name, default)
+                preferences.getLong(preferencesName, default)
             }
             is String -> {
-                preferences.getString(name, default)
+                preferences.getString(preferencesName, default)
             }
             is Int -> {
-                preferences.getInt(name, default)
+                preferences.getInt(preferencesName, default)
             }
             else -> {
                 throw IllegalAccessException("is not ")
@@ -38,20 +39,24 @@ class PreferenceExt<T>(
         } as T
     }
 
+
+    fun selectName(property: KProperty<*>)=name.isBlank().isTrue { property.name }.Other { name }
+
     override fun setValue(thisRef: Any?, property: KProperty<*>, value: T) {
+        val preferencesName=selectName(property)
         preferences.edit().also {
             when (value) {
                 is Boolean -> {
-                    it.putBoolean(name, value)
+                    it.putBoolean(preferencesName, value)
                 }
                 is Long -> {
-                    it.putLong(name, value)
+                    it.putLong(preferencesName, value)
                 }
                 is String -> {
-                    it.putString(name, value)
+                    it.putString(preferencesName, value)
                 }
                 is Int -> {
-                    it.putInt(name, value)
+                    it.putInt(preferencesName, value)
                 }
                 else -> {
                     throw IllegalAccessException("is not ")
