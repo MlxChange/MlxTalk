@@ -1,6 +1,5 @@
 package com.mlx.codereader.utils
 
-import android.accounts.AccountsException
 import android.util.Log
 import com.google.gson.Gson
 import com.mlx.codereader.api.services.AccountService
@@ -41,11 +40,11 @@ object AccountUtils {
         }
     val onAccountStateChangeListeners= mutableListOf<onAccountStateChangeListener>()
 
-    fun notiyLogin(account: Account){
+    private fun notiyLogin(account: Account){
         onAccountStateChangeListeners.forEach { it.onLogin(account) }
     }
 
-    fun notiyLogout(){
+    private fun notiyLogout(){
         onAccountStateChangeListeners.forEach { it.onLogout()}
 
     }
