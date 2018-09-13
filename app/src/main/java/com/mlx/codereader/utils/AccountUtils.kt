@@ -38,13 +38,13 @@ object AccountUtils {
             field=value
 
         }
-    val onAccountStateChangeListeners= mutableListOf<onAccountStateChangeListener>()
+    val onAccountStateChangeListeners= mutableListOf<OnAccountStateChangeListener>()
 
-    private fun notiyLogin(account: Account){
+    private fun notifyLogin(account: Account){
         onAccountStateChangeListeners.forEach { it.onLogin(account) }
     }
 
-    private fun notiyLogout(){
+    private fun notifyLogout(){
         onAccountStateChangeListeners.forEach { it.onLogout()}
 
     }
@@ -76,7 +76,7 @@ object AccountUtils {
                 }
                 .map {
                     currentUser=it
-                    notiyLogin(it)
+                    notifyLogin(it)
                 }
 
 
@@ -92,7 +92,7 @@ object AccountUtils {
                         token=""
                         id=-1
                         currentUser=null
-                        notiyLogout()
+                        notifyLogout()
                     }else
                         throw HttpException(it)
                 }
@@ -105,7 +105,7 @@ object AccountUtils {
 }
 class AccountException(val accountId: Int) : Exception("account already logged in")
 
-interface onAccountStateChangeListener{
+interface OnAccountStateChangeListener{
     fun onLogin(account:Account)
     fun onLogout()
 }
