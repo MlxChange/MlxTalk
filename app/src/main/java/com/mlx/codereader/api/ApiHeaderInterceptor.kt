@@ -19,8 +19,8 @@ class ApiHeaderInterceptor : Interceptor {
                 .apply {
                     when{
                         originalRequest.url().pathSegments().contains("authorizations")->{
-                            val nameAndpass=AccountUtils.username+":"+AccountUtils.password
-                            val encode= Base64.encode(nameAndpass.toByteArray(),Base64.DEFAULT)
+                            val nameAndpassword=AccountUtils.username+":"+AccountUtils.password
+                            val encode= Base64.encode(nameAndpassword.toByteArray(),Base64.DEFAULT)
                             val author= "Basic "+String(encode).trim()
                             addHeader("Authorization",author)
                        }
