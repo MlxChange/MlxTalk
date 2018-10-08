@@ -77,6 +77,7 @@ object AccountUtils {
                 .map {
                     currentUser=it
                     notifyLogin(it)
+
                 }
 
 

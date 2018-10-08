@@ -29,7 +29,7 @@ abstract class BaseActivity<out P:BasePresenter<BaseActivity<P>>>:IView<P>,AppCo
                 yield(classType.supertypes)
                 classType=classType.supertypes.firstOrNull()?.jvmErasure ?:break
             }
-        }.flatMap{
+        }.flatMap{ it ->
             it.flatMap{it.arguments}.asSequence()
         }.first{
             it.type?.jvmErasure?.isSubclassOf(IPresenter::class) ?: false
