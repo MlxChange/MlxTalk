@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
         AccountUtils.username="mlxChange"
         AccountUtils.password="7biezhideai"
         AccountUtils.Login().subscribe({
-
         },{})
     }
 }
