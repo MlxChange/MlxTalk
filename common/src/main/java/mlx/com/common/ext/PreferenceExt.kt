@@ -11,7 +11,7 @@ import kotlin.reflect.KProperty
 class PreferenceExt<T>(
         var context: Context,
         val name: String="",
-        val default: T,
+        private val default: T,
         val preName: String = "default") : ReadWriteProperty<Any?, T> {
 
     private val preferences by lazy {
