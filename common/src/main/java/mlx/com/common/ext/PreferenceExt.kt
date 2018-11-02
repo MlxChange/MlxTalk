@@ -12,7 +12,7 @@ class PreferenceExt<T>(
         var context: Context,
         val name: String="",
         private val default: T,
-        val preName: String = "default") : ReadWriteProperty<Any?, T> {
+        private val preName: String = "default") : ReadWriteProperty<Any?, T> {
 
     private val preferences by lazy {
         context.getSharedPreferences(preName, Context.MODE_PRIVATE)
