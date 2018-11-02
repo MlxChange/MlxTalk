@@ -1,14 +1,14 @@
 package com.mlx.codeReader.model
 
 import com.google.gson.annotations.SerializedName
-import com.mlx.codeReader.annotation.NoArg
+import com.mlx.codeReader.annotation.NoArgs
 
 
 /**
  * Project:codeReader
  * Created by malingxiang on 2018/9/10.
  */
-@NoArg
+@NoArgs
 data class AuthorizationRsp(
         @SerializedName("id")
         val id: Int?,

@@ -6,4 +6,4 @@ package com.mlx.codeReader.annotation
  */
 @Retention(AnnotationRetention.BINARY)
 @Target(AnnotationTarget.CLASS)
-annotation class NoArg
+annotation class NoArgs

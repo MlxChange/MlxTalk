@@ -27,7 +27,7 @@ android {
 }
 
 noArg {
-    annotation("com.mlx.codereader.annotation.NoArg")
+    annotation("com.mlx.codereader.annotation.NoArgs")
 }
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
