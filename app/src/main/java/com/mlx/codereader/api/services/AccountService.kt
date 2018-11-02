@@ -13,7 +13,7 @@ import retrofit2.http.PATCH
  */
 interface AccountService{
     companion object {
-        val INSTANCE=Service.getRetrofit().create(AccountService::class.java)
+        val INSTANCE= Service.getRetrofit().create(AccountService::class.java)!!
     }
 
 

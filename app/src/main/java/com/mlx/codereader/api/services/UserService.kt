@@ -14,7 +14,7 @@ interface UserService{
 
 
     companion object {
-        val INSTANCE=Service.getRetrofit().create(UserService::class.java)
+        val INSTANCE= Service.getRetrofit().create(UserService::class.java)!!
     }
 
     @GET("users/{username}")

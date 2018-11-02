@@ -18,7 +18,7 @@ import retrofit2.http.Path
 interface AuthService {
 
     companion object {
-        val INSTANCE=Service.getRetrofit().create(AuthService::class.java)
+        val INSTANCE=Service.getRetrofit().create(AuthService::class.java)!!
     }
 
     @PUT("authorizations/clients/${Configs.Account.CLIENT_ID}/{fingerprint}")
