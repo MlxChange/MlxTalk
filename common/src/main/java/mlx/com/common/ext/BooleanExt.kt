@@ -7,7 +7,7 @@ package mlx.com.common.ext
 
 sealed class BooleanExt<out T>
 
-class IsFalse : BooleanExt<Nothing>()
+object IsFalse : BooleanExt<Nothing>()
 class WithData<T>(val data: T) : BooleanExt<T>()
 
 inline fun <T> Boolean.isTrue(block: () -> T) =
@@ -16,18 +16,18 @@ inline fun <T> Boolean.isTrue(block: () -> T) =
                 WithData(block())
             }
             else -> {
-                IsFalse()
+                IsFalse
             }
         }
 
 inline fun <T> Boolean.isFalse(block: () -> T)=
         when{
-            this->IsFalse()
+            this-> IsFalse
             else->WithData(block())
         }
 
 
-inline fun <T> BooleanExt<T>.Other(block: () -> T): T =
+inline fun <T> BooleanExt<T>.other(block: () -> T): T =
         when (this) {
             is IsFalse -> block()
             is WithData -> this.data

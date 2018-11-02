@@ -40,7 +40,7 @@ class PreferenceExt<T>(
     }
 
 
-    private fun selectName(property: KProperty<*>)=name.isBlank().isTrue { property.name }.Other { name }
+    private fun selectName(property: KProperty<*>)=name.isBlank().isTrue { property.name }.other { name }
 
     override fun setValue(thisRef: Any?, property: KProperty<*>, value: T) {
         val preferencesName=selectName(property)
