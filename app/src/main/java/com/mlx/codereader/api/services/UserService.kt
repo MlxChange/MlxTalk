@@ -1,8 +1,7 @@
-package com.mlx.codereader.api.services
+package com.mlx.codeReader.api.services
 
-import com.mlx.codereader.api.Service
-import com.mlx.codereader.model.Account
-import com.mlx.codereader.model.User
+import com.mlx.codeReader.api.Service
+import com.mlx.codeReader.model.User
 import io.reactivex.Flowable
 import retrofit2.http.GET
 import retrofit2.http.Path

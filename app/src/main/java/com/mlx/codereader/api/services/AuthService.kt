@@ -1,10 +1,10 @@
-package com.mlx.codereader.api.services
+package com.mlx.codeReader.api.services
 
-import com.mlx.codereader.api.Service
+import com.mlx.codeReader.api.Service
 import io.reactivex.Flowable
-import com.mlx.codereader.model.request.AuthorizationReq
-import com.mlx.codereader.model.AuthorizationRsp
-import com.mlx.codereader.utils.Configs
+import com.mlx.codeReader.model.request.AuthorizationReq
+import com.mlx.codeReader.model.AuthorizationRsp
+import com.mlx.codeReader.utils.Configs
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.DELETE

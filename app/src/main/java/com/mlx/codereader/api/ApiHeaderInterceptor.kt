@@ -1,8 +1,8 @@
-package com.mlx.codereader.api
+package com.mlx.codeReader.api
 
 
 import android.util.Base64
-import com.mlx.codereader.utils.AccountUtils
+import com.mlx.codeReader.utils.AccountUtils
 import okhttp3.Interceptor
 import okhttp3.Response
 import java.io.IOException

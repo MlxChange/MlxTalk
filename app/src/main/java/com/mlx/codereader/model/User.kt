@@ -1,7 +1,7 @@
-package com.mlx.codereader.model
+package com.mlx.codeReader.model
 
 import com.google.gson.annotations.SerializedName
-import com.mlx.codereader.annotation.NoArg
+import com.mlx.codeReader.annotation.NoArg
 
 @NoArg
 data class User(

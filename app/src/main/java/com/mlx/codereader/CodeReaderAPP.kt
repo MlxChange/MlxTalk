@@ -1,9 +1,9 @@
-package com.mlx.codereader
+package com.mlx.codeReader
 
 import android.app.Application
 import android.content.ContextWrapper
-import com.mlx.codereader.api.BASE_URL
-import com.mlx.codereader.api.Service
+import com.mlx.codeReader.api.BASE_URL
+import com.mlx.codeReader.api.Service
 
 /**
  * Project:codeReader

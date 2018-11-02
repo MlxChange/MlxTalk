@@ -1,7 +1,7 @@
-package com.mlx.codereader.model.request
+package com.mlx.codeReader.model.request
 
-import com.mlx.codereader.annotation.NoArg
-import com.mlx.codereader.utils.Configs
+import com.mlx.codeReader.annotation.NoArg
+import com.mlx.codeReader.utils.Configs
 
 /**
  * Project:codeReader

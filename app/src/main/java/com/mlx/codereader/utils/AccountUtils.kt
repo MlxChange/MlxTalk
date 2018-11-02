@@ -1,11 +1,11 @@
-package com.mlx.codereader.utils
+package com.mlx.codeReader.utils
 
 import android.util.Log
 import com.google.gson.Gson
-import com.mlx.codereader.api.services.AccountService
-import com.mlx.codereader.api.services.AuthService
-import com.mlx.codereader.model.Account
-import com.mlx.codereader.model.request.AuthorizationReq
+import com.mlx.codeReader.api.services.AccountService
+import com.mlx.codeReader.api.services.AuthService
+import com.mlx.codeReader.model.Account
+import com.mlx.codeReader.model.request.AuthorizationReq
 import io.reactivex.Flowable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers

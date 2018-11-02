@@ -1,6 +1,5 @@
-package com.mlx.codereader.utils
+package com.mlx.codeReader.utils
 
-import com.mlx.codereader.AppContext
 import java.util.*
 
 /**

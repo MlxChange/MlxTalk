@@ -1,4 +1,4 @@
-package com.mlx.codereader.annotation
+package com.mlx.codeReader.annotation
 
 /**
  * Project:codeReader

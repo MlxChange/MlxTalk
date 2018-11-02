@@ -1,4 +1,4 @@
-package com.mlx.codereader.api
+package com.mlx.codeReader.api
 
 import android.util.Log
 import okhttp3.logging.HttpLoggingInterceptor

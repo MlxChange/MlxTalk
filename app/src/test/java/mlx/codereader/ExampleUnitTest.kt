@@ -1,26 +1,17 @@
 package mlx.codereader
 
 
-import android.content.Context
 import com.google.gson.GsonBuilder
-import com.mlx.codereader.AppContext
-import com.mlx.codereader.CodeReaderAPP
-import com.mlx.codereader.api.HttpLog
-import com.mlx.codereader.api.Service
-import com.mlx.codereader.api.services.AccountService
-import com.mlx.codereader.api.services.AuthService
-import com.mlx.codereader.model.request.AuthorizationReq
-import mlx.com.common.ext.ensureDir
-import okhttp3.Cache
+import com.mlx.codeReader.api.HttpLog
+import com.mlx.codeReader.api.services.AuthService
+import com.mlx.codeReader.model.request.AuthorizationReq
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.junit.Test
 
-import org.junit.Assert.*
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
-import java.io.File
 
 /**
  * Example local unit test, which will execute on the development machine (host).

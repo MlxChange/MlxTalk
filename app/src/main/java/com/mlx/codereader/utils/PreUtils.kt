@@ -1,6 +1,6 @@
-package com.mlx.codereader.utils
+package com.mlx.codeReader.utils
 
-import com.mlx.codereader.AppContext
+import com.mlx.codeReader.AppContext
 import mlx.com.common.ext.PreferenceExt
 
 /**
