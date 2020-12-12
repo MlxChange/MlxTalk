@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "380383165909",
+    "firebase_url": "https://wechat-af1e1.firebaseio.com",
+    "project_id": "wechat-af1e1",
+    "storage_bucket": "wechat-af1e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380383165909:android:7a8c2f1621bd632310915c",
+        "android_client_info": {
+          "package_name": "com.blackhole.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380383165909-12o7mhi72tsvg28ij81nkndt50nrfepp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.blackhole.chat_app",
+            "certificate_hash": "7984477e445cf4999eb2474f2c537f090dd62ee9"
+          }
+        },
+        {
+          "client_id": "380383165909-s8k7v2umgj3tarl4k0p57clma82qmihi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiqnr3_kgI6iofU7187VNLoAAcTEyU1bo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380383165909-s8k7v2umgj3tarl4k0p57clma82qmihi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380383165909:android:b559e6ef499cb1ce10915c",
+        "android_client_info": {
+          "package_name": "com.enigma.amitjoki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380383165909-qaihn47rhqch6cn8fa8cs1ibcqonemub.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.enigma.amitjoki",
+            "certificate_hash": "7984477e445cf4999eb2474f2c537f090dd62ee9"
+          }
+        },
+        {
+          "client_id": "380383165909-s8k7v2umgj3tarl4k0p57clma82qmihi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiqnr3_kgI6iofU7187VNLoAAcTEyU1bo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380383165909-s8k7v2umgj3tarl4k0p57clma82qmihi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380383165909:android:4d9db80f3c6a713410915c",
+        "android_client_info": {
+          "package_name": "com.mlx.ZH"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380383165909-vcbgpnibdo97538imamg91cl9ve0voa6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mlx.ZH",
+            "certificate_hash": "7984477e445cf4999eb2474f2c537f090dd62ee9"
+          }
+        },
+        {
+          "client_id": "380383165909-s8k7v2umgj3tarl4k0p57clma82qmihi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiqnr3_kgI6iofU7187VNLoAAcTEyU1bo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380383165909-s8k7v2umgj3tarl4k0p57clma82qmihi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:380383165909:android:0f6aa2b1d01a955910915c",
+        "android_client_info": {
+          "package_name": "com.mlx.memechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "380383165909-guhd14pf9kff354nsappcki1jhj29jn8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mlx.memechat",
+            "certificate_hash": "3d832e7cdc5817ccea06c41563180431703e3c11"
+          }
+        },
+        {
+          "client_id": "380383165909-s8k7v2umgj3tarl4k0p57clma82qmihi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDiqnr3_kgI6iofU7187VNLoAAcTEyU1bo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "380383165909-s8k7v2umgj3tarl4k0p57clma82qmihi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
